@@ -11,8 +11,18 @@ void fizzBizz(int start, int end)
 {
     printf("\nFizzBizz::START: %d, %d\n", start, end);
     
-    // TODO: Your code here!
-    // Ex.: printf("Fizz\n");
+    int x;
+    
+    for (x = start; x <= end; x = x + 1) {
+        if ((x%5 || x%3) == 0)
+            printf ("FizzBuzz\n");
+        else if (x%5 == 0)
+            printf ("Buzz\n");
+        else if (x%3 == 0)
+            printf ("Fizz\n");
+        else
+            printf ("%d\n", x);
+    }
     
     printf("\nFizzBizz::END\n");
 }
